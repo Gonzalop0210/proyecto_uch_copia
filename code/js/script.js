@@ -11,5 +11,28 @@ link__universidad.addEventListener('mouseout', ()=>{
     list__universidad.classList.add('h-0')
 })
 
-const span = document.querySelector('span')
-span.textContent = 'Iván Galarza'
+const list__admision = document.querySelector('#list__admision');
+const link__admision = document.querySelector('#link__admision');
+
+link__admision.addEventListener('mouseover', ()=>{
+    list__admision.classList.remove('h-0')
+    list__admision.classList.add('h-62', 'border-b', 'border-color-naranja')
+})
+
+link__admision.addEventListener('mouseout', ()=>{
+    list__admision.classList.remove('h-62', 'border-b', 'border-color-naranja')
+    list__admision.classList.add('h-0')
+})
+
+const link__estudia__nosotros = document.querySelector('#link__estudia__nosotros');
+const list__estudia__nosotros = document.querySelector('#list__estudia__nosotros');
+
+link__estudia__nosotros.addEventListener('mouseover', ()=>{
+    list__estudia__nosotros.classList.remove('h-0')
+    list__estudia__nosotros.classList.add('h-36', 'border-b', 'border-color-naranja')
+})
+
+link__estudia__nosotros.addEventListener('mouseout', ()=>{
+    list__estudia__nosotros.classList.remove('h-36', 'border-b', 'border-color-naranja')
+    list__estudia__nosotros.classList.add('h-0')
+})

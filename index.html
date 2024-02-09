@@ -5,16 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UCH</title>
     <link rel="stylesheet" href="/code/styles/index.css">
-    <style>
-        span {
-            font-size: 25px;
-            background-color: seagreen;
-            color: white;
-            margin-left: 30%;
-            padding: 5px 20px;
-            border-radius: 8px;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/6d642dc6ea.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <aside class="mt-1">
@@ -48,41 +39,53 @@
             </section>
             <section class="mt-5">
                 <ul class="flex justify-between">
-                    <a id="link__universidad" href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4 relative">
-                        <li>Universidad</li>
-                        <ul id="list__universidad" class="absolute left-0 top-full w-60 px-2 h-0 overflow-hidden flex flex-col justify-between">
-                            <a class="font-normal text-sm py-1"><li>Alumnos</li></a>
-                            <a class="font-normal text-sm border-t border-gray-200 py-1"><li>Egresados</li></a>
-                            <a class="font-normal text-sm border-t border-gray-200 py-1"><li>nosotros</li></a>
-                            <a class="font-normal text-sm border-t border-gray-200 py-1"><li>Propuesta Académica</li></a>
-                            <a class="font-normal text-sm border-t border-gray-200 py-1"><li>Facultades</li></a>
-                            <a class="font-normal text-sm border-t border-gray-200 py-1"><li>Estudios Generales</li></a>
-                            <a class="font-normal text-sm border-t border-gray-200 py-1"><li>Eventos</li></a>
-                            <a class="font-normal text-sm border-t border-gray-200 py-1"><li>Campus</li></a>
-                            <a class="font-normal text-sm border-t border-gray-200 py-1"><li>Transparencia</li></a>
+                    <li id="link__universidad" href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4 relative">
+                        <span>Universidad</span>
+                        <ul id="list__universidad" class="absolute left-0 top-full w-60 px-2 h-0 overflow-hidden flex flex-col justify-between bg-white">
+                            <li><a class="block font-normal text-sm py-1" href="#">Alumnos</a></li>
+                            <li><a class="block font-normal text-sm border-t border-gray-200 py-1" href="#">Egresados</a></li>
+                            <li><a class="block font-normal text-sm border-t border-gray-200 py-1" href="#">Nosotros</a></li>
+                            <li><a class="block font-normal text-sm border-t border-gray-200 py-1" href="#">Propuesta Académica</a></li>
+                            <li><a class="block font-normal text-sm border-t border-gray-200 py-1" href="#">Facultades</a></li>
+                            <li><a class="block font-normal text-sm border-t border-gray-200 py-1" href="#">Estudios Generales</a></li>
+                            <li><a class="block font-normal text-sm border-t border-gray-200 py-1" href="#">Eventos</a></li>
+                            <li><a class="block font-normal text-sm border-t border-gray-200 py-1" href="#">Campus</a></li>
+                            <li><a class="block font-normal text-sm border-t border-gray-200 py-1" href="#">Transparencia</a></li>
                         </ul>
-                    </a>
-                    <a id="link__admision" href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4">
-                        <li>Admisión</li>
-                        <ul id="list__admision">
-                            
+                    </li>
+                    <li id="link__admision" href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4 relative">
+                        <span>Admisión</span>
+                        <ul id="list__admision" class="absolute left-0 top-full w-64 px-2 h-0 flex flex-col justify-between bg-white">
+                            <li id="link__estudia__nosotros" class="flex items-center justify-between relative">
+                                <a class="block font-normal text-sm py-1" href="#">Estudia con nosotros</a>
+                                <i class="text-gray-300 text-sm fa-solid fa-caret-right relative"></i>
+                                <ul id="list__estudia__nosotros" class="absolute overflow-hidden h-0" style="left: 100%;width: 170px; top:0; margin-left: 12px;">
+                                    <li><a class="block font-normal text-sm py-1" href="#">Presentación</a></li>
+                                    <li><a class="block font-normal text-sm border-t border-gray-200 py-1" href="#">Modalidad Presencial</a></li>
+                                    <li><a class="block font-normal text-sm border-t border-gray-200 py-1" href="#">Modalidad Semipresencial</a></li>
+                                    <li><a class="block font-normal text-sm border-t border-gray-200 py-1" href="#">Modalidades de Ingreso</a></li>
+                                    <li><a class="block font-normal text-sm border-t border-gray-200 py-1" href="#">Temario</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="block font-normal text-sm border-t border-gray-200 py-1" href="#">Ciclo cero</a></li>
+                            <li><a class="block font-normal text-sm border-t border-gray-200 py-1" href="#">Atención en línea</a></li>
+                            <li><a class="block font-normal text-sm border-t border-gray-200 py-1" href="#">Informes e inscripciones</a></li>
+                            <li><a class="block font-normal text-sm border-t border-gray-200 py-1" href="#">Examen Preferencial</a></li>
+                            <li><a class="block font-normal text-sm border-t border-gray-200 py-1" href="#">Resultados de exámenes</a></li>
                         </ul>
-                    </a>
-                    <a href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><li>Posgrado</li></a>
-                    <a href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><li>Internacionalización</li></a>
-                    <a href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><li>Servicios</li></a>
-                    <a href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><li>Investigación</li></a>
-                    <a href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><li>Extensión</li></a>
-                    <a href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><li>Cultura</li></a>
-                    <a href="#" class="hover:cursor-pointer font-bold bg-color-azul text-white px-4 py-4 hover:underline"><li>Beca 18</li></a>
-                    <a href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><li>Carreras</li></a>
+                    </li>
+                    <li href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><span>Posgrado</span></li>
+                    <li href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><span>Internacionalización</span></li>
+                    <li href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><span>Servicios</span></li>
+                    <li href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><span>Investigación</span></li>
+                    <li href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><span>Extensión</span></li>
+                    <li href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><span>Cultura</span></li>
+                    <li href="#" class="hover:cursor-pointer font-bold bg-color-azul text-white px-4 py-4 hover:underline"><span>Beca 18</span></li>
+                    <li href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><span>Carreras</span></li>
                 </ul>
             </section>
         </div>
     </header>
-    <body>
-        <span></span>
-    </body>
     <script src="/code/js/script.js"></script>
 </body>
 </html>

@@ -15,13 +15,13 @@ const list__admision = document.querySelector('#list__admision');
 const link__admision = document.querySelector('#link__admision');
 
 link__admision.addEventListener('mouseover', ()=>{
-    list__admision.classList.remove('h-0')
+    list__admision.classList.remove('h-0', 'overflow-hidden')
     list__admision.classList.add('h-62', 'border-b', 'border-color-naranja')
 })
 
 link__admision.addEventListener('mouseout', ()=>{
     list__admision.classList.remove('h-62', 'border-b', 'border-color-naranja')
-    list__admision.classList.add('h-0')
+    list__admision.classList.add('h-0', 'overflow-hidden')
 })
 
 const link__estudia__nosotros = document.querySelector('#link__estudia__nosotros');

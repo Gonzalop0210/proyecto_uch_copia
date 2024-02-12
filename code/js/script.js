@@ -36,3 +36,16 @@ link__estudia__nosotros.addEventListener('mouseout', ()=>{
     list__estudia__nosotros.classList.remove('h-36', 'border-b', 'border-color-naranja')
     list__estudia__nosotros.classList.add('h-0')
 })
+
+const link__servicios = document.querySelector('#link__servicios');
+const list__servicios = document.querySelector('#list__servicios');
+
+link__servicios.addEventListener('mouseover', ()=>{
+    list__servicios.classList.remove('h-0')
+    list__servicios.classList.add('h-300', 'border-b', 'border-color-naranja', 'p-2')
+})
+
+link__servicios.addEventListener('mouseout', ()=>{
+    list__servicios.classList.remove('h-300', 'border-b', 'border-color-naranja', 'p-2')
+    list__servicios.classList.add('h-0')
+})

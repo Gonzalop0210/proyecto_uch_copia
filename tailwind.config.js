@@ -17,6 +17,12 @@ module.exports = {
         'color-link-hover': '#23527c',
         'color-verde': '#23c16e',
       },
+      width: {
+        '528': '528px',
+      },
+      height: {
+        '300': '300px',
+      },
     },
   },
   plugins: [],

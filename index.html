@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UCH</title>
     <link rel="stylesheet" href="/code/styles/index.css">
+    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/6d642dc6ea.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -41,7 +42,7 @@
                 <ul class="flex justify-between">
                     <li id="link__universidad" href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4 relative">
                         <span>Universidad</span>
-                        <ul id="list__universidad" class="absolute left-0 top-full w-60 px-2 h-0 overflow-hidden flex flex-col justify-between bg-white">
+                        <ul id="list__universidad" class="absolute left-0 top-full w-60 px-2 h-0 overflow-hidden flex flex-col justify-between bg-white z-10">
                             <li><a class="block font-normal hover:text-color-naranja transition-colors duration-100 text-sm py-1" href="#">Alumnos</a></li>
                             <li><a class="block font-normal hover:text-color-naranja transition-colors duration-100 text-sm border-t border-gray-200 py-1" href="#">Egresados</a></li>
                             <li><a class="block font-normal hover:text-color-naranja transition-colors duration-100 text-sm border-t border-gray-200 py-1" href="#">Nosotros</a></li>
@@ -55,7 +56,7 @@
                     </li>
                     <li id="link__admision" href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4 relative">
                         <span>Admisión</span>
-                        <ul id="list__admision" class="absolute left-0 top-full w-64 px-2 h-0 overflow-hidden flex flex-col justify-between bg-white">
+                        <ul id="list__admision" class="absolute left-0 top-full w-64 px-2 h-0 overflow-hidden flex flex-col justify-between bg-white z-10">
                             <li id="link__estudia__nosotros" class="relative flex items-center justify-between">
                                 <a class="block font-normal hover:text-color-naranja transition-colors text-sm py-1" href="#">Estudia con nosotros</a>
                                 <i class="text-gray-300 text-sm fa-solid fa-caret-right relative"></i>
@@ -78,7 +79,7 @@
                     <li href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><span>Internacionalización</span></li>
                     <li id="link__servicios" href="#" class="relative hover:cursor-pointer text-color-azul font-bold px-4 py-4">
                         <span>Servicios</span>
-                        <div id="list__servicios" class="absolute top-full -left-40 flex justify-between gap-2 w-528 h-0 overflow-hidden">
+                        <div id="list__servicios" class="absolute top-full -left-40 flex justify-between gap-2 w-528 h-0 overflow-hidden bg-white z-10">
                             <ul class="text-sm font-normal w-2/4">
                                 <li class="h-8 flex items-center hover:text-color-naranja transition-colors"><a class="" href="#">Matrícula</a></li>
                                 <li class="border-t border-gray-200 h-8 flex items-center hover:text-color-naranja transition-colors"><a class="" href="#">Trámites</a></li>
@@ -102,15 +103,59 @@
                             </ul>
                         </div>
                     </li>
-                    <li href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><span>Investigación</span></li>
-                    <li href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><span>Extensión</span></li>
-                    <li href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><span>Cultura</span></li>
+                    <li id="link__investigacion" href="#" class="relative hover:cursor-pointer text-color-azul font-bold px-4 py-4">
+                        <span>Investigación</span>
+                        <ul id="list__investigacion" class="absolute top-full -left-12 text-sm font-normal bg-white w-60 h-0 overflow-hidden z-10">
+                            <li class="h-8 flex items-center hover:text-color-naranja transition-colors""><a href="#">Unidades de investigación</a></li>
+                            <li id="link__centro__investigacion" class="relative border-t border-gray-200 h-8 flex items-center justify-between">
+                                <a class="hover:text-color-naranja transition-colors" href="#">Centros de investigación</a>
+                                <i class="text-gray-300 text-sm fa-solid fa-caret-right relative"></i>
+                                <ul id="list__centro__investigacion" class="absolute left-full top-2 bg-white w-44 h-0 overflow-hidden">
+                                    <li class="h-8 flex items-center hover:text-color-naranja transition-colors"><a href="#">e-Health</a></li>
+                                    <li class="border-t border-gray-200 h-8 flex items-center hover:text-color-naranja transition-colors"><a href="#">INTI-Lab</a></li>
+                                    <li class="border-t border-gray-200 h-8 flex items-center hover:text-color-naranja transition-colors"><a href="#">CIICS</a></li>
+                                </ul>
+                            </li>
+                            <li class="border-t border-gray-200 h-8 flex items-center hover:text-color-naranja transition-colors"><a href="#">Publicación de resultados</a></li>
+                            <li class="border-t border-gray-200 h-8 flex items-center hover:text-color-naranja transition-colors"><a href="#">Repositorio institucional</a></li>
+                            <li class="border-t border-gray-200 h-8 flex items-center hover:text-color-naranja transition-colors"><a href="#">Dina</a></li>
+                            <li class="border-t border-gray-200 h-8 flex items-center hover:text-color-naranja transition-colors"><a href="#">Revista Health Care & Global Health</a></li>
+                        </ul>
+                    </li>
+                    <li id="link__extension" href="#" class="relative hover:cursor-pointer text-color-azul font-bold px-4 py-4">
+                        <span>Extensión</span>
+                        <ul id="list__extension" class="absolute top-full -left-16 text-sm font-normal bg-white w-64 h-0 overflow-hidden z-10">
+                            <li class="h-8 flex items-center hover:text-color-naranja transition-colors"><a href="#">Centro de Formación Continua (CFC)</a></li>
+                            <li class="border-t border-gray-200 h-8 flex items-center hover:text-color-naranja transition-colors"><a href="#">Idiomas UCH</a></li>
+                            <li class="border-t border-gray-200 h-8 flex items-center hover:text-color-naranja transition-colors"><a href="#">Trámites Documentario - CFC</a></li>
+                        </ul>
+                    </li>
+                    <li id="link__cultura" href="#" class="relative hover:cursor-pointer text-color-azul font-bold px-4 py-4">
+                        <span>Cultura</span>
+                        <ul id="list__cultura" class="absolute top-full -left-5 text-sm font-normal bg-white w-32 h-0 overflow-hidden z-10">
+                            <li class="h-full flex items-center hover:text-color-naranja transition-colors"><a href="#">Fondo Editorial</a></li>
+                        </ul>
+                    </li>
                     <li href="#" class="hover:cursor-pointer font-bold bg-color-azul text-white px-4 py-4 hover:underline"><span>Beca 18</span></li>
                     <li href="#" class="hover:cursor-pointer text-color-azul font-bold px-4 py-4"><span>Carreras</span></li>
                 </ul>
             </section>
         </div>
+        <section id="slider_principal" class="swiper h-900 relative">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="w-full h-full object-cover" src="/img/slider-olse-plataforma.jpg" alt=""></div>
+                <div class="swiper-slide"><img class="w-full h-full object-cover" src="/img/slider-web-matestria.jpg" alt=""></div>
+                <div class="swiper-slide"><img class="w-full h-full object-cover" src="/img/sliderdemodalidaddeestudios.jpg" alt=""></div>
+                <div class="swiper-slide"><img class="w-full h-full object-cover" src="/img/slideroctubre.jpg" alt=""></div>
+                <div class="swiper-slide"><img class="w-full h-full object-cover" src="/img/febrero-176.jpg" alt=""></div>
+            </div>
+
+            <div class="sp_prev absolute top-1/2 transform -translate-y-1/2 border border-gray-300 z-10 text-gray-300 text-sm left-0 ml-6 w-7 h-7 rounded-full flex items-center justify-center"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="sp_next absolute top-1/2 transform -translate-y-1/2 border border-gray-300 z-10 text-gray-300 text-sm right-0 mr-6 w-7 h-7 rounded-full flex items-center justify-center"><i class="fa-solid fa-chevron-right"></i></div>
+        </section>
     </header>
+    <script src="/node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="/code/js/script.js"></script>
+    <script src="/code/js/slider.js"></script>
 </body>
 </html>

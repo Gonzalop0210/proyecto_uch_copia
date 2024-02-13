@@ -49,3 +49,55 @@ link__servicios.addEventListener('mouseout', ()=>{
     list__servicios.classList.remove('h-300', 'border-b', 'border-color-naranja', 'p-2')
     list__servicios.classList.add('h-0')
 })
+
+const link__centro__investigacion = document.querySelector('#link__centro__investigacion');
+const list__centro__investigacion = document.querySelector('#list__centro__investigacion');
+
+link__centro__investigacion.addEventListener('mouseover', ()=>{
+    list__centro__investigacion.classList.remove('h-0')
+    list__centro__investigacion.classList.add('h-28', 'border-b', 'border-color-naranja', 'p-2', 'shadow-lg')
+})
+
+link__centro__investigacion.addEventListener('mouseout', ()=>{
+    list__centro__investigacion.classList.remove('h-28', 'border-b', 'border-color-naranja', 'p-2', 'shadow-lg')
+    list__centro__investigacion.classList.add('h-0')
+})
+
+const link__investigacion = document.querySelector('#link__investigacion');
+const list__investigacion = document.querySelector('#list__investigacion');
+
+link__investigacion.addEventListener('mouseover', ()=>{
+    list__investigacion.classList.remove('h-0', 'overflow-hidden')
+    list__investigacion.classList.add('h-52', 'border-b', 'border-color-naranja', 'p-2')
+})
+
+link__investigacion.addEventListener('mouseout', ()=>{
+    list__investigacion.classList.remove('h-52', 'border-b', 'border-color-naranja', 'p-2')
+    list__investigacion.classList.add('h-0', 'overflow-hidden')
+})
+
+const link__extension = document.querySelector('#link__extension');
+const list__extension = document.querySelector('#list__extension');
+
+link__extension.addEventListener('mouseover', ()=>{
+    list__extension.classList.remove('h-0')
+    list__extension.classList.add('h-28', 'border-b', 'border-color-naranja', 'p-2')
+})
+
+link__extension.addEventListener('mouseout', ()=>{
+    list__extension.classList.remove('h-28', 'border-b', 'border-color-naranja', 'p-2')
+    list__extension.classList.add('h-0')
+})
+
+const link__cultura = document.querySelector('#link__cultura');
+const list__cultura = document.querySelector('#list__cultura');
+
+link__cultura.addEventListener('mouseover', ()=>{
+    list__cultura.classList.remove('h-0')
+    list__cultura.classList.add('h-8', 'border-b', 'border-color-naranja', 'p-2')
+})
+
+link__cultura.addEventListener('mouseout', ()=>{
+    list__cultura.classList.remove('h-8', 'border-b', 'border-color-naranja', 'p-2')
+    list__cultura.classList.add('h-0')
+})

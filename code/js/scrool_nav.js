@@ -3,12 +3,10 @@ window.addEventListener('scroll', () => {
     const distancia = nav.getBoundingClientRect().top;
 
     if (distancia <= 0 && window.scrollY > 100) {
-        nav.classList.add('fixed', 'top-0', 'items-center', 'bg-opacity-85');
-        nav.classList.remove('items-end');
+        nav.classList.add('fixed', 'top-0', 'items-center', 'bg-opacity-85', 'w-full');
+        nav.classList.remove('items-end', 'w-1152');
     } else {
-        nav.classList.remove('fixed', 'top-0', 'items-center', 'bg-opacity-85');
-        nav.classList.add('items-end');
+        nav.classList.remove('fixed', 'top-0', 'items-center', 'bg-opacity-85', 'w-full');
+        nav.classList.add('items-end', 'w-1152');
     }
-
-    console.log(window.scrollY);
 })

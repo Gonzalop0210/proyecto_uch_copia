@@ -101,3 +101,53 @@ link__cultura.addEventListener('mouseout', ()=>{
     list__cultura.classList.remove('h-8', 'border-b', 'border-color-naranja', 'p-2')
     list__cultura.classList.add('h-0')
 })
+
+/* FACULTADES */
+const container__ci_ing = document.querySelector('#container__ci_ing');
+const list__container__ci_ing = document.querySelector('#list__container__ci_ing');
+const container__cc_ec_fin = document.querySelector('#container__cc_ec_fin');
+const list__container__cc_ec_fin = document.querySelector('#list__container__cc_ec_fin');
+const container__hu_cs = document.querySelector('#container__hu_cs');
+const list__container__hu_cs = document.querySelector('#list__container__hu_cs');
+const container__salud = document.querySelector('#container__salud');
+const list__container__salud = document.querySelector('#list__container__salud');
+
+container__ci_ing.addEventListener('mouseover', ()=>{
+    list__container__ci_ing.classList.add('h-152', 'mt-4')
+    list__container__ci_ing.classList.remove('h-0')
+})
+
+container__ci_ing.addEventListener('mouseout', ()=>{
+    list__container__ci_ing.classList.remove('h-152', 'mt-4')
+    list__container__ci_ing.classList.add('h-0')
+})
+
+container__cc_ec_fin.addEventListener('mouseover', ()=>{
+    list__container__cc_ec_fin.classList.add('h-28', 'mt-4')
+    list__container__cc_ec_fin.classList.remove('h-0')
+})
+
+container__cc_ec_fin.addEventListener('mouseout', ()=>{
+    list__container__cc_ec_fin.classList.remove('h-28', 'mt-4')
+    list__container__cc_ec_fin.classList.add('h-0')
+})
+
+container__hu_cs.addEventListener('mouseover', ()=>{
+    list__container__hu_cs.classList.add('h-32', 'mt-4')
+    list__container__hu_cs.classList.remove('h-0')
+})
+
+container__hu_cs.addEventListener('mouseout', ()=>{
+    list__container__hu_cs.classList.remove('h-32', 'mt-4')
+    list__container__hu_cs.classList.add('h-0')
+})
+
+container__salud.addEventListener('mouseover', ()=>{
+    list__container__salud.classList.add('h-32', 'mt-4')
+    list__container__salud.classList.remove('h-0')
+})
+
+container__salud.addEventListener('mouseout', ()=>{
+    list__container__salud.classList.remove('h-32', 'mt-4')
+    list__container__salud.classList.add('h-0')
+})

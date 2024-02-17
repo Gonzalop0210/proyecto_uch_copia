@@ -158,47 +158,179 @@
     </header>
     <main class="mt-9">
         <div>
-            <section id="facultades" class="max-w-6xl mx-auto border">
+            <section id="facultades" class="max-w-6xl mx-auto">
                 <h2 class="text-color-azul text-3xl font-bold text-center font-montserrat">Facultades</h2>
                 <div class="flex justify-between mt-6">
-                    <div class="bg-color-azul text-white w-56 h-56 flex items-center pl-2 hover:cursor-pointer hover:bg-color-naranja transition-colors duration-300">
+                    <div id="container__ci_ing" class="bg-color-azul text-white w-56 h-56 flex flex-col justify-center pl-2 pr-2 hover:cursor-pointer hover:bg-color-naranja transition-colors duration-300">
                         <span class="font-semibold">Ciencias e Ingeniería</span>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                        <ul id="list__container__ci_ing" class="text-xs font-semibold flex flex-col h-0 overflow-hidden transition-all duration-300"> <!-- h-152 mt-4-->
+                            <li class="h-8 flex items-center border-b"><a href="#">Ingenieria Ambiental</a></li>
+                            <li class="h-8 flex items-center border-b"><a href="#">Ingenieria de Sistemas e Informática</a></li>
+                            <li class="h-14 flex items-center border-b"><a href="#">Ingenieria Electrónica con mención en Telecomunicaciones</a></li>
+                            <li class="h-8 flex items-center border-b"><a href="#">Ingenieria Industrial</a></li>
                         </ul>
                     </div>
-                    <div class="bg-color-azul text-white w-56 h-56 flex items-center pl-2 hover:cursor-pointer hover:bg-color-naranja transition-colors duration-300">
+                    <div id="container__cc_ec_fin" class="bg-color-azul text-white w-56 h-56 flex flex-col justify-center pl-2 pr-2 hover:cursor-pointer hover:bg-color-naranja transition-colors duration-300">
                         <span class="font-semibold">Ciencias Contables, Económicas y Financieras</span>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                        <ul id="list__container__cc_ec_fin" class="text-xs font-semibold flex flex-col h-0 overflow-hidden transition-all duration-300"> <!-- h-28 mt-4 -->
+                            <li class="h-8 flex items-center border-b"><a href="#">Administración</a></li>
+                            <li class="h-12 flex items-center border-b"><a href="#">Contabilidad con mención en Finanzas</a></li>
+                            <li class="h-8 flex items-center border-b"><a href="#">Marketing y Negocios Internacionales</a></li>
                         </ul>
                     </div>
-                    <div class="bg-color-azul text-white w-56 h-56 flex items-center pl-2 hover:cursor-pointer hover:bg-color-naranja transition-colors duration-300">
+                    <div id="container__hu_cs" class="bg-color-azul text-white w-56 h-56 flex flex-col justify-center pl-2 pr-2 hover:cursor-pointer hover:bg-color-naranja transition-colors duration-300">
                         <span class="font-semibold">Humanidades y Ciencias Sociales</span>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                        <ul id="list__container__hu_cs" class="text-xs font-semibold flex flex-col h-0 overflow-hidden transition-all duration-300"> <!-- h-32 mt-4 -->
+                            <li class="h-8 flex items-center border-b"><a href="#">Comunicación y Medios Digitales</a></li>
+                            <li class="h-8 flex items-center border-b"><a href="#">Derecho</a></li>
+                            <li class="h-8 flex items-center border-b"><a href="#">Educación Inicial</a></li>
+                            <li class="h-8 flex items-center border-b"><a href="#">Educación Primaria e Interculturalidad</a></li>
                         </ul>
                     </div>
-                    <div class="bg-color-azul text-white w-56 h-56 flex items-center pl-2 hover:cursor-pointer hover:bg-color-naranja transition-colors duration-300">
+                    <div id="container__salud" class="bg-color-azul text-white w-56 h-56 flex flex-col justify-center pl-2 pr-2 hover:cursor-pointer hover:bg-color-naranja transition-colors duration-300">
                         <span class="font-semibold">Ciencias de la Salud</span>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                        <ul id="list__container__salud" class="text-xs font-semibold flex flex-col h-0 overflow-hidden transition-all duration-300"> <!-- h-32 mt-4 -->
+                            <li class="h-8 flex items-center border-b"><a href="#">Enfermería</a></li>
+                            <li class="h-8 flex items-center border-b"><a href="#">Farmacia y Bioquimica</a></li>
+                            <li class="h-8 flex items-center border-b"><a href="#">Nutrición y Dietética</a></li>
+                            <li class="h-8 flex items-center border-b"><a href="#">Psicología</a></li>
                         </ul>
                     </div>
                     <div class="bg-color-azul text-white w-56 h-56 flex items-center pl-2 hover:cursor-pointer hover:bg-color-naranja transition-colors duration-300">
                         <span class="font-semibold">Estudios Generales</span>
                     </div>
+                </div>
+            </section>
+            <section id="noticias" class="max-w-6xl mx-auto mt-12">
+                <h2 class="text-color-azul text-3xl font-bold text-center font-montserrat">Últimas noticias</h2>
+                <div id="slider_noticias" class="swiper mt-8">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide border border-gray-300 hover:cursor-pointer">
+                            <section class="relative overflow-hidden">
+                                <img id="img_noticias" class="w-full h-full transition-transform duration-300 object-cover" src="/img/daniel-yupanqui-uch-universidad-de-ciencias-y-humanidades-psicologia-investigacion-compressed.jpg" alt="">
+                                <div id="bg_azul_noticias" class="absolute top-0 left-0 bg-color-azul opacity-80 w-0 h-0 overflow-hidden transition-all duration-300"></div>
+                                <span id="hover__noticias" class="absolute top-0 left-0 w-full h-full flex justify-center items-center text-white font-semibold opacity-0 transition-opacity duration-300">Leer mas</span>
+                            </section>
+                            <section class="text-sm p-4">
+                                <p class="">Docente de la UCH logra ser calificado como investigador Renacyt</p>
+                                <div class="flex justify-between mt-5">
+                                    <div>
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <span>09 febrero, 2024</span>
+                                    </div>
+                                    <div class="text-color-link-azul">
+                                        <i class="fa-regular fa-bookmark"></i>
+                                        <a href="#">Académicas</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide border border-gray-300 hover:cursor-pointer">
+                            <section class="relative overflow-hidden">
+                                <img id="img_noticias" class="w-full h-full transition-transform duration-300 object-cover" src="/img/estudiantes-educacion-primaria-e-interculturalidad-inicial-universidad-de-ciencias-y-humanidades-compressed_1.jpg" alt="">
+                                <div id="bg_azul_noticias" class="absolute top-0 left-0 bg-color-azul opacity-80 w-0 h-0 overflow-hidden transition-all duration-300"></div>
+                                <span id="hover__noticias" class="absolute top-0 left-0 w-full h-full flex justify-center items-center text-white font-semibold opacity-0 transition-opacity duration-300">Leer mas</span>
+                            </section>
+                            <section class="text-sm p-4">
+                                <p class="">Barrio Seguro: Estudiantes de la UCH brindan clases voluntarias a escolares a nivel nacional</p>
+                                <div class="flex justify-between mt-5">
+                                    <div>
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <span>07 febrero, 2024</span>
+                                    </div>
+                                    <div class="text-color-link-azul">
+                                        <i class="fa-regular fa-bookmark"></i>
+                                        <a href="#">Académicas</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide border border-gray-300 hover:cursor-pointer">
+                            <section class="relative overflow-hidden">
+                                <img id="img_noticias" class="w-full h-full transition-transform duration-300 object-cover" src="/img/sesion-tematica-maestria-uch-compressed.jpg" alt="">
+                                <div id="bg_azul_noticias" class="absolute top-0 left-0 bg-color-azul opacity-80 w-0 h-0 overflow-hidden transition-all duration-300"></div>
+                                <span id="hover__noticias" class="absolute top-0 left-0 w-full h-full flex justify-center items-center text-white font-semibold opacity-0 transition-opacity duration-300">Leer mas</span>
+                            </section>
+                            <section class="text-sm p-4">
+                                <p class="">Maestría en docencia universitaria: ¿Es la investigación su pilar?</p>
+                                <div class="flex justify-between mt-5">
+                                    <div>
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <span>02 febrero, 2024</span>
+                                    </div>
+                                    <div class="text-color-link-azul">
+                                        <i class="fa-regular fa-bookmark"></i>
+                                        <a href="#">Institucionales</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide border border-gray-300 hover:cursor-pointer">
+                            <section class="relative overflow-hidden">
+                                <img id="img_noticias" class="w-full h-full transition-transform duration-300 object-cover" src="/img/digemid-uch-contenedor-medicinas-vencidas-usadas-medicinas-falsificadas-bambas-lima-norte-universidad-de-ciencias-y-humanidades-compressed.jpg" alt="">
+                                <div id="bg_azul_noticias" class="absolute top-0 left-0 bg-color-azul opacity-80 w-0 h-0 overflow-hidden transition-all duration-300"></div>
+                                <span id="hover__noticias" class="absolute top-0 left-0 w-full h-full flex justify-center items-center text-white font-semibold opacity-0 transition-opacity duration-300">Leer mas</span>
+                            </section>
+                            <section class="text-sm p-4">
+                                <p class="">UCH se suma a la iniciativa de la Digemid para acopiar medicamentos vencidos</p>
+                                <div class="flex justify-between mt-5">
+                                    <div>
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <span>02 febrero, 2024</span>
+                                    </div>
+                                    <div class="text-color-link-azul">
+                                        <i class="fa-regular fa-bookmark"></i>
+                                        <a href="#">Académicas</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide border border-gray-300 hover:cursor-pointer">
+                            <section class="relative overflow-hidden">
+                                <img id="img_noticias" class="w-full h-full transition-transform duration-300 object-cover" src="/img/paso-de-la-luz-enfermeria-florence-nigthingale-imposicion-de-uniformes-turquesa-compressed.jpg" alt="">
+                                <div id="bg_azul_noticias" class="absolute top-0 left-0 bg-color-azul opacity-80 w-0 h-0 overflow-hidden transition-all duration-300"></div>
+                                <span id="hover__noticias" class="absolute top-0 left-0 w-full h-full flex justify-center items-center text-white font-semibold opacity-0 transition-opacity duration-300">Leer mas</span>
+                            </section>
+                            <section class="text-sm p-4">
+                                <p class="">Enfermería: Estudiantes inician internado con Ceremonia del Paso de la Luz</p>
+                                <div class="flex justify-between mt-5">
+                                    <div>
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <span>29 enero, 2024</span>
+                                    </div>
+                                    <div class="text-color-link-azul">
+                                        <i class="fa-regular fa-bookmark"></i>
+                                        <a href="#">Académicas</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide border border-gray-300 hover:cursor-pointer">
+                            <section class="relative overflow-hidden">
+                                <img id="img_noticias" class="w-full h-full transition-transform duration-300 object-cover" src="/img/psicologia-uch-practicas-preprofesionales-compressed.jpg" alt="">
+                                <div id="bg_azul_noticias" class="absolute top-0 left-0 bg-color-azul opacity-80 w-0 h-0 overflow-hidden transition-all duration-300"></div>
+                                <span id="hover__noticias" class="absolute top-0 left-0 w-full h-full flex justify-center items-center text-white font-semibold opacity-0 transition-opacity duration-300">Leer mas</span>
+                            </section>
+                            <section class="text-sm p-4">
+                                <p class="">Primera promoción de Psicología de la UCH inicia Prácticas Profesionales</p>
+                                <div class="flex justify-between mt-5">
+                                    <div>
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <span>13 febrero, 2024</span>
+                                    </div>
+                                    <div class="text-color-link-azul">
+                                        <i class="fa-regular fa-bookmark"></i>
+                                        <a href="#">Institucionales</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="paginacion_noticias w-full text-center mt-3"></div>
+
+                    <div class="sp_prev_noticias absolute top-1/2 transform -translate-y-1/2 border border-gray-300 z-10 text-gray-300 hover:text-white hover:border-white transition duration-300 hover:cursor-pointer text-sm left-0 ml-6 w-7 h-7 rounded-full flex items-center justify-center"><i class="fa-solid fa-chevron-left"></i></div>
+                    <div class="sp_next_noticias absolute top-1/2 transform -translate-y-1/2 border border-gray-300 z-10 text-gray-300 hover:text-white hover:border-white transition duration-300 hover:cursor-pointer text-sm right-0 mr-6 w-7 h-7 rounded-full flex items-center justify-center"><i class="fa-solid fa-chevron-right"></i></div>
                 </div>
             </section>
         </div>
@@ -207,5 +339,6 @@
     <script src="/code/js/script.js"></script>
     <script src="/code/js/slider.js"></script>
     <script src="/code/js/scrool_nav.js"></script>
+    <script src="/code/js/noticias.js"></script>
 </body>
 </html>

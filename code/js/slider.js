@@ -60,3 +60,36 @@ const slider_noticias = new Swiper('#slider_noticias', {
         }
     }
 });
+
+const slider_videoteca = new Swiper('#slider_videoteca', {
+    loop: true,
+    autoplay: {
+        delay: 3000,
+    },
+    slidesPerView: 4,
+    spaceBetween: 30,
+    speed: 2000,
+    navigation: {
+        nextEl: '.sp_prev_videoteca',
+        prevEl: '.sp_next_videoteca',
+    },
+    pagination: {
+        el: '.paginacion_videoteca',
+        clickable: true,
+    },
+    on: {
+        slideChange: function () {
+            const span_pagination = document.querySelector('.paginacion_videoteca').children;
+            for (const span of span_pagination) {
+                if (span.classList.contains('swiper-pagination-bullet')) {
+                    span.style.setProperty('background-color', '#333', 'important')
+                    span.style.setProperty('opacity', '1', 'important')
+                    span.style.setProperty('margin', '0 10px 0 10px')
+                }
+                if (span.classList.contains('swiper-pagination-bullet-active')) {
+                    span.style.setProperty('background-color', 'rgb(239,65,54,1)', 'important')
+                }
+            }
+        }
+    }
+});

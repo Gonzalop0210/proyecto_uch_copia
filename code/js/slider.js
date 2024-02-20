@@ -70,8 +70,8 @@ const slider_videoteca = new Swiper('#slider_videoteca', {
     spaceBetween: 30,
     speed: 2000,
     navigation: {
-        nextEl: '.sp_prev_videoteca',
-        prevEl: '.sp_next_videoteca',
+        nextEl: '.sp_next_videoteca',
+        prevEl: '.sp_prev_videoteca',
     },
     pagination: {
         el: '.paginacion_videoteca',

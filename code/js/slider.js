@@ -91,5 +91,5 @@ const slider_videoteca = new Swiper('#slider_videoteca', {
                 }
             }
         }
-    }
+    },
 });

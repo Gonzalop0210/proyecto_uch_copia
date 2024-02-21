@@ -335,74 +335,71 @@
             </section>
             <section id="videoteca" class="max-w-6xl mx-auto mt-12">
                 <h2 class="text-color-azul text-3xl font-bold text-center font-montserrat">Videoteca</h2>
-                <div id="slider_videoteca" class="swiper mt-8">
+                <div id="slider_videoteca" class="relative swiper mt-8">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide relative">
-                            <img src="/img/u-uhluqbw5a.jpg" alt="" class="w-full h-full object-cover">
-                            <div class="absolute w-full h-full bg-color-azul opacity-80 top-0 left-0"></div>
-                            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 flex flex-col items-center">
-                                <i class="fa-solid fa-circle-play text-red-700 text-2xl w-4/5 text-center"></i>
-                                <p class="text-white font-semibold w-4/5">Fondo Editorial UCH: Entrevista al Mag. Enrique Sotomayor Trelles</p>
+                        <div class="slide-videoteca swiper-slide relative cursor-pointer overflow-hidden">
+                            <img id="img_videoteca" src="/img/u-uhluqbw5a.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300">
+                            <div id="bg_slide_videoteca" class="absolute w-full h-full top-0 left-0 transition-colors duration-300"></div>
+                            <div id="text_slide_videoteca" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 flex flex-col items-center opacity-0 transition-opacity duration-300">
+                                <i class="fa-solid fa-circle-play text-red-700 text-4xl w-4/5 text-center"></i>
+                                <p class="text-white font-bold w-4/5 text-center">Fondo Editorial UCH: Entrevista al Mag. Enrique Sotomayor Trelles</p>
                             </div>
                         </div>
-                        <div class="swiper-slide relative">
-                            <img src="/img/j2wtmb7l4mi.jpg" alt="" class="w-full h-full object-cover">
-                            <div class="absolute w-full h-full bg-color-azul opacity-80 top-0 left-0"></div>
-                            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 flex flex-col items-center">
-                                <i class="fa-solid fa-circle-play text-red-700 text-2xl w-4/5 text-center"></i>
-                                <p class="text-white font-semibold w-4/5">UCH | Perú con Ciencia 2021 - Proyectos: Samaycov</p>
+                        <div class="slide-videoteca swiper-slide relative cursor-pointer overflow-hidden">
+                            <img id="img_videoteca" src="/img/j2wtmb7l4mi.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300">
+                            <div id="bg_slide_videoteca" class="absolute w-full h-full top-0 left-0 transition-colors duration-300"></div>
+                            <div id="text_slide_videoteca" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 flex flex-col items-center opacity-0 transition-opacity duration-300">
+                                <i class="fa-solid fa-circle-play text-red-700 text-4xl w-4/5 text-center"></i>
+                                <p class="text-white font-bold w-4/5 text-center">UCH | Perú con Ciencia 2021 - Proyectos: Samaycov</p>
                             </div>
                         </div>
-                        <div class="swiper-slide relative">
-                            <img src="/img/lqc4mhsfp8e.jpg" alt="" class="w-full h-full object-cover">
-                            <div class="absolute w-full h-full bg-color-azul opacity-80 top-0 left-0"></div>
-                            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 flex flex-col items-center">
-                                <i class="fa-solid fa-circle-play text-red-700 text-2xl w-4/5 text-center"></i>
-                                <p class="text-white font-semibold w-4/5">UCH: Universidades que mejoran - SUNEDU</p>
+                        <div class="slide-videoteca swiper-slide relative cursor-pointer overflow-hidden">
+                            <img id="img_videoteca" src="/img/lqc4mhsfp8e.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300">
+                            <div id="bg_slide_videoteca" class="absolute w-full h-full top-0 left-0 transition-colors duration-300"></div>
+                            <div id="text_slide_videoteca" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 flex flex-col items-center opacity-0 transition-opacity duration-300">
+                                <i class="fa-solid fa-circle-play text-red-700 text-4xl w-4/5 text-center"></i>
+                                <p class="text-white font-bold w-4/5 text-center">UCH: Universidades que mejoran - SUNEDU</p>
                             </div>
                         </div>
-                        <div class="swiper-slide relative">
-                            <img src="/img/jeaetca6zwm.jpg" alt="" class="w-full h-full object-cover">
-                            <div class="absolute w-full h-full bg-color-azul opacity-80 top-0 left-0"></div>
-                            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 flex flex-col items-center">
-                                <i class="fa-solid fa-circle-play text-red-700 text-2xl w-4/5 text-center"></i>
-                                <p class="text-white font-semibold w-4/5">Victor Romero: Egresado de la carrera de Ingenieria Electrónica con Mención en Telecomunicaciones</p>
+                        <div class="slide-videoteca swiper-slide relative cursor-pointer overflow-hidden">
+                            <img id="img_videoteca" src="/img/jeaetca6zwm.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300">
+                            <div id="bg_slide_videoteca" class="absolute w-full h-full top-0 left-0 transition-colors duration-300"></div>
+                            <div id="text_slide_videoteca" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 flex flex-col items-center opacity-0 transition-opacity duration-300">
+                                <i class="fa-solid fa-circle-play text-red-700 text-4xl w-4/5 text-center"></i>
+                                <p class="text-white font-bold w-4/5 text-center">Victor Romero: Egresado de la carrera de Ingenieria Electrónica con Mención en Telecomunicaciones</p>
                             </div>
                         </div>
-                        <div class="swiper-slide relative">
-                            <img src="/img/dffmw9kkoh4.jpg" alt="" class="w-full h-full object-cover">
-                            <div class="absolute w-full h-full bg-color-azul opacity-80 top-0 left-0"></div>
-                            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 flex flex-col items-center">
-                                <i class="fa-solid fa-circle-play text-red-700 text-2xl w-4/5 text-center"></i>
-                                <p class="text-white font-semibold w-4/5">Joaquín Chávez egresado de la carrera de Ingeniería Electrónica con Mención en Telecomunicaciones.</p>
+                        <div class="slide-videoteca swiper-slide relative cursor-pointer overflow-hidden">
+                            <img id="img_videoteca" src="/img/dffmw9kkoh4.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300">
+                            <div id="bg_slide_videoteca" class="absolute w-full h-full top-0 left-0 transition-colors duration-300"></div>
+                            <div id="text_slide_videoteca" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 flex flex-col items-center opacity-0 transition-opacity duration-300">
+                                <i class="fa-solid fa-circle-play text-red-700 text-4xl w-4/5 text-center"></i>
+                                <p class="text-white font-bold w-4/5 text-center">Joaquín Chávez egresado de la carrera de Ingeniería Electrónica con Mención en Telecomunicaciones.</p>
                             </div>
                         </div>
-                        <div class="swiper-slide relative">
-                            <img src="/img/dkp1crjld-i.jpg" alt="" class="w-full h-full object-cover">
-                            <div class="absolute w-full h-full bg-color-azul opacity-80 top-0 left-0"></div>
-                            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 flex flex-col items-center">
-                                <i class="fa-solid fa-circle-play text-red-700 text-2xl w-4/5 text-center"></i>
-                                <p class="text-white font-semibold w-4/5">Yolanda Saravia: Egresada de enfermeria</p>
+                        <div class="slide-videoteca swiper-slide relative cursor-pointer overflow-hidden">
+                            <img id="img_videoteca" src="/img/dkp1crjld-i.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300">
+                            <div id="bg_slide_videoteca" class="absolute w-full h-full top-0 left-0 transition-colors duration-300"></div>
+                            <div id="text_slide_videoteca" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 flex flex-col items-center opacity-0 transition-opacity duration-300">
+                                <i class="fa-solid fa-circle-play text-red-700 text-4xl w-4/5 text-center"></i>
+                                <p class="text-white font-bold w-4/5 text-center">Yolanda Saravia: Egresada de enfermeria</p>
                             </div>
                         </div>
-                        <div class="swiper-slide relative">
-                            <img src="/img/p_ci07d3tam_0.jpg" alt="" class="w-full h-full object-cover">
-                            <div class="absolute w-full h-full bg-color-azul opacity-80 top-0 left-0"></div>
-                            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 flex flex-col items-center">
-                                <i class="fa-solid fa-circle-play text-red-700 text-2xl w-4/5 text-center"></i>
-                                <p class="text-white font-semibold w-4/5">Ling Huamán: Primaria e Interculturalidad</p>
+                        <div class="slide-videoteca swiper-slide relative cursor-pointer overflow-hidden">
+                            <img id="img_videoteca" src="/img/p_ci07d3tam_0.jpg" alt="" class="w-full h-full object-cov transition-transform duration-300er">
+                            <div id="bg_slide_videoteca" class="absolute w-full h-full top-0 left-0 transition-colors duration-300"></div>
+                            <div id="text_slide_videoteca" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 flex flex-col items-center opacity-0 transition-opacity duration-300">
+                                <i class="fa-solid fa-circle-play text-red-700 text-4xl w-4/5 text-center"></i>
+                                <p class="text-white font-bold w-4/5 text-center">Ling Huamán: Primaria e Interculturalidad</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="paginacion_videoteca w-full text-center"></div>
+                    <div class="paginacion_videoteca text-center mt-4"></div>
 
                     <div class="sp_prev_videoteca absolute top-1/2 transform -translate-y-1/2 border border-gray-300 z-10 text-gray-300 hover:text-white hover:border-white transition duration-300 hover:cursor-pointer text-sm left-0 ml-6 w-7 h-7 rounded-full flex items-center justify-center"><i class="fa-solid fa-chevron-left"></i></div>
                     <div class="sp_next_videoteca absolute top-1/2 transform -translate-y-1/2 border border-gray-300 z-10 text-gray-300 hover:text-white hover:border-white transition duration-300 hover:cursor-pointer text-sm right-0 mr-6 w-7 h-7 rounded-full flex items-center justify-center"><i class="fa-solid fa-chevron-right"></i></div>
                 </div>
-            </section>
-            <section class="mt-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quisquam dolores officiis obcaecati quibusdam perspiciatis est quam. Repellendus unde sed, dolores voluptatum voluptas voluptate error nesciunt nostrum expedita corrupti? Quaerat.
             </section>
         </div>
     </main>
@@ -411,5 +408,6 @@
     <script src="/code/js/slider.js"></script>
     <script src="/code/js/scrool_nav.js"></script>
     <script src="/code/js/noticias.js"></script>
+    <script src="/code/js/videoteca.js"></script>
 </body>
 </html>

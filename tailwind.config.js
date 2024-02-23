@@ -17,6 +17,7 @@ module.exports = {
         'color-link-azul': '#337ab7',
         'color-link-hover': '#23527c',
         'color-verde': '#23c16e',
+        'color-uch': '#dae7f0',
       },
       width: {
         '528': '528px',
@@ -26,7 +27,9 @@ module.exports = {
       height: {
         '300': '300px',
         '152': '152px',
-        'full-10': '110%'
+        'full-10': '110%',
+        '680': '680px',
+        '1px': '1px',
       },
     },
   },

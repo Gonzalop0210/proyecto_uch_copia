@@ -608,6 +608,18 @@ video {
   top: 100%;
 }
 
+.bottom-5{
+  bottom: 1.25rem;
+}
+
+.right-5{
+  right: 1.25rem;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -674,6 +686,11 @@ video {
   margin-bottom: 1.75rem;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .ml-6{
   margin-left: 1.5rem;
 }
@@ -712,6 +729,18 @@ video {
 
 .mt-9{
   margin-top: 2.25rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
 }
 
 .block{
@@ -938,6 +967,30 @@ video {
   gap: 1rem;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
+.gap-10{
+  gap: 2.5rem;
+}
+
+.gap-14{
+  gap: 3.5rem;
+}
+
+.gap-1{
+  gap: 0.25rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
+.gap-7{
+  gap: 1.75rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1011,6 +1064,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-green-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-85{
   --tw-bg-opacity: 0.85;
 }
@@ -1026,6 +1084,14 @@ video {
 
 .p-4{
   padding: 1rem;
+}
+
+.p-6{
+  padding: 1.5rem;
+}
+
+.p-3{
+  padding: 0.75rem;
 }
 
 .px-2{
@@ -1058,6 +1124,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-7{
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .pl-1{
   padding-left: 0.25rem;
 }
@@ -1068,6 +1139,14 @@ video {
 
 .pr-2{
   padding-right: 0.5rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
+}
+
+.pt-7{
+  padding-top: 1.75rem;
 }
 
 .text-center{
@@ -1101,6 +1180,21 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold{
@@ -1138,6 +1232,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-green-500{
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
 .opacity-0{
